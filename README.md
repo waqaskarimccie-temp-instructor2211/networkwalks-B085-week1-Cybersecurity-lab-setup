@@ -40,3 +40,7 @@ ASDF
 | 🚪 Default Gateway | 10.0.0.1           |
 | 🌍 DNS Server      | 8.8.8.8            |
 | 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
+
+
+# SCREENSHOTS
+![](1-screenshot-title-image.png)

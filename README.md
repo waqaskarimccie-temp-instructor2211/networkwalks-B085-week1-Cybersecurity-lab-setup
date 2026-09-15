@@ -1,46 +1,69 @@
-<div align="center">
-
-# 🔐 Cybersecurity Lab Environment Setup
-
-**Building an isolated virtual lab for penetration testing and ethical hacking practice**
-</div>
+# 🔐 Cybersecurity Lab Setup — Kali Linux & VirtualBox
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ETHICAL-HACKING-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Ver-Virtualbox%20v7.3-0070C0?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Penetration%20Testing-C00000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Waqas%20Karim%20CCIE-C00000?style=flat-square" />
+  <img src="https://www.kali.org/images/kali-logo.svg" width="120" alt="Kali Linux Logo">
 </p>
-AFASDFASDF
-ASDFA
-ASDF
-ASDF
 
-## ⚙️ Lab Configuration
+<p align="center">
+  <b>A Virtual Cybersecurity Lab Environment for Security Learning, Testing & Practice</b>
+</p>
 
-| 🧩 Component       | ⚙️ Configuration   |
-| ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10         |
-| 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel Core i7      |
-| 🧰 Hypervisor      | VirtualBox 7.2  |
-| 🐉 Security OS     | Kali Linux 2026.2  |
-| 🧠 Kali RAM        | 2048 MB            |
-| 🌐 Virtual Network | NAT Network        |
-| 📡 Network Address | 10.0.0.0/24        |
-| 🐧 Kali IP Address | 10.0.0.2/24        |
-| 🚪 Default Gateway | 10.0.0.1           |
-| 🌍 DNS Server      | 8.8.8.8            |
-| 🔮 Future VM Range | 10.0.0.3–10.0.0.99 |
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-VirtualBox-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/OS-Kali%20Linux-557C94?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Focus-Cybersecurity-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Environment-Lab-green?style=for-the-badge">
+</p>
 
+---
 
-# SCREENSHOTS
-![](1-screenshot-title-image.png)
+## 📌 Overview
+
+This project documents the setup of a **virtual cybersecurity laboratory** using **Kali Linux** and **Oracle VirtualBox**.
+
+The purpose of this lab is to provide an isolated and controlled environment for learning and practicing cybersecurity concepts, networking, reconnaissance, vulnerability assessment, penetration testing, and security tools.
+
+The lab can be expanded over time by adding additional virtual machines such as vulnerable systems, Windows hosts, Linux servers, security monitoring systems, and intentionally vulnerable applications.
+
+> ⚠️ **This laboratory is intended for authorized security testing and educational purposes only.**
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this lab are:
+
+- 🐧 Deploy Kali Linux as a cybersecurity workstation
+- 💻 Configure Kali Linux inside VirtualBox
+- 🌐 Configure virtual networking
+- 🔎 Practice network reconnaissance
+- 🛡️ Learn vulnerability assessment techniques
+- 🔐 Practice penetration testing in an isolated environment
+- 🧪 Experiment with cybersecurity tools safely
+- 📊 Develop practical cybersecurity skills
+- 🏗️ Build a foundation for an expandable home cybersecurity lab
+
+---
+
+## 🏗️ Lab Architecture
+
+The initial lab consists of a Kali Linux virtual machine running inside Oracle VirtualBox.
+
+```text
+                         ┌─────────────────────┐
+                         │      HOST PC        │
+                         │  Windows / Linux    │
+                         └──────────┬──────────┘
+                                    │
+                                    │
+                           ┌────────▼────────┐
+                           │   VirtualBox    │
+                           │ Virtual Network │
+                           └────────┬────────┘
+                                    │
+                                    │
+                           ┌────────▼────────┐
+                           │    Kali Linux   │
+                           │  Cybersecurity  │
+                           │   Workstation   │
+                           └─────────────────┘
